@@ -30,4 +30,16 @@ dependencies {
     implementation("ch.qos.logback:logback-classic:$logback_version")
     testImplementation("io.ktor:ktor-server-test-host")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
+
+    implementation("io.ktor:ktor-serialization-jackson:$kotlin_version")
+
+
+    // Adicione estas dependências se ainda não tiver
+    implementation("io.ktor:ktor-serialization-jackson:$kotlin_version")
+    implementation("io.ktor:ktor-server-content-negotiation:$kotlin_version")
+    // PostgreSQL driver
+    implementation("org.postgresql:postgresql:42.6.0")
+
+    // HikariCP - Connection poolin
+
 }
